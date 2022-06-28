@@ -12,8 +12,12 @@
 
 /* HEADER */
 
-.header {
+header {
   grid-area: header;
+}
+
+header svg {
+  width: 30px;
 }
 
 /* NAV */
@@ -22,9 +26,14 @@
   grid-area: navigation;
 }
 
+nav svg {
+padding: 10px 15px 5px 15px;
+  width: 30px;
+}
+
 /* MAIN */
 
-.main {
+main {
   grid-area: main;
   display: grid;
 }
