@@ -22,8 +22,9 @@ header svg {
 
 /* NAV */
 
-.navigation {
-  grid-area: navigation;
+nav {
+grid-area: navigation;
+
 }
 
 nav svg {
