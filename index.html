@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web App Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+</head>
+  <body class="grid-container">
+<!-- HEADER SECTION -->
+    <header>
+        <h1></h1>
+        <div class="bell-container">
+          <svg></svg>
+          <div class="notifications"></div>
+          <img>
+          <h3></h3>
+        </div>
+    </header>
+<!-- NAVIGATION SECTION -->
+    <nav>
+      <a></a>
+      <img>
+    </nav>
+<!-- MAIN CONTENT SECTION -->
+    <main class="main">
+        <div class="main-header">
+        <h2 class="headline">Dashboard</h2>
+        <div class="tab"</div>
+      </div>
+      <!-- ALERT BANNER -->
+      <div class="alert" id="alert">
+
+      </div>
+      <!-- LINE GRAPHS CHART -->
+      <section class= "traffic">
+        <div class= "traffic-header"
+        <h3>Traffic</h3>
+          <ul class="traffic-nav">
+            <li class="traffic-nav-link">Hourly</li>
+            <li class="traffic-nav-link">Daily</li>
+            <li class="traffic-nav-link active">Weekly</li>
+            <li class="traffic-nav-link">Monthly</li>
+          </ul>
+        </div>
+        <div class="widget-container-full">
+
+          <canvas id="traffic-chart"></canvas>
+        </div>
+
+      </section>
+      <!-- DAILY TRAFFIC-->
+      <section class="daily">
+        <h3>Daily</h3>
+
+        <div class="widget-container-half">
+
+        <canvas id="daily-chart"></canvas>
+        </div>
+    </section>
+    <!-- SOCIAL STATS SECTION-->
+    <h3>Social Stats</h3>
+      <div class="social-container">
+      <div class="social-image">
+
+      </div>
+      <div class="social-text">
+        <p>Twitter</P>
+        <p>10,345</P>
+      </div>
+      </div>
+      <div class="social-container">
+      <div class="social-image">
+
+      </div>
+      <div class="social-text">
+        <p>Facebook</P>
+        <p>11,345</P>
+      </div>
+      </div>
+      <div class="social-container">
+      <div class="social-image">
+
+      </div>
+      <div class="social-text">
+        <p>Instagram</P>
+        <p>14,345</P>
+      </div>
+      </div>
+      <!-- MEMBERS -->
+      <section class="members">
+        <h3>New Members</h3>
+
+        <div class="members-container">
+          <img src = "images/member-1.jpg" class="profile-image">
+        <div class="members-text">
+          <p>Victoria Chambers</p>
+          <a href="#">victoria.chambers@gmail.com</a>
+          </div>
+          <p>10/15/15</p>
+          </div>
+      </section>
+      <!-- MESSAGES -->
+      <section class="messages">
+        <h3>Message User</h3>
+
+        <form class="widget-container">
+          <input type="text" placeholders="Search For User" Class="form-field" id="userField">
+          <textarea placeholders="Message for user" class="form-area" id="messageField"></textarea>
+          <button class="button-primary" id="send">Send</button>
+          </form>
+      </section>
+      <!-- SETTINGS -->
+      <section class="settings">
+        <h3>Settings</h3>
+        <!-- custom css toggle code -->
+
+        <select class="form-field" id="timezone">
+          <option disabled selected>Select a Timezone</option>
+          <option>Eastern</option>
+          <!-- more options -->
+          </select>
+          <div class="settings button">
+            <button class="button-primary" id="save">Save</button>
+            <button class="button-disabled" id="cancel">Cancel</button>
+            </div>
+        </section>
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
