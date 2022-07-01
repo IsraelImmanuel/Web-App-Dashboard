@@ -59,6 +59,13 @@ header img {
   width: 40px;
 }
 
+#notifications {
+  width: 5px;
+  height: 5px;
+  background-color: lightgreen;
+  margin-left: auto;
+  border-radius: 50%;
+}
 /* NAV */
 
 nav {
@@ -199,6 +206,24 @@ fill: white;
   flex-direction: column;
   margin: 0 auto;
 }
+
+.members-text-1 p {
+padding-left: 35px;
+}
+
+.members-text-2 p {
+padding-left: 20px;
+}
+
+.members-text-3 p {
+padding-left: 20px;
+}
+
+.members-text-4 p {
+padding-left: 35px;
+}
+
+
 
 /* MEDIA QUERIES */
 
