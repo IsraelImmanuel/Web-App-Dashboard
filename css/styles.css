@@ -18,6 +18,20 @@ h3 {
   font-size: 25px
 }
 
+.widget-container-half,
+.widget-container-full {
+   border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
+}
+
+.members h3 {
+  border-top: rgba(211, 211, 211, 0.692) solid 1px;
+}
+
+.settings h3 {
+  border-top: rgba(211, 211, 211, 0.692) solid 1px;
+}
+
+
 /* HEADER */
 
 header {
@@ -29,14 +43,14 @@ header {
   color: white;
 }
 
-img.header-icon {
+.bell-container svg {
   width: 30px;
   display: flex;
   color: white;
   transition: width .3s, height .3s;
 }
 
-.header-icon:hover {
+svg:hover {
 width: 30px;
 height: 30px;
 }
@@ -57,6 +71,8 @@ header img {
 
 .profile-image {
   width: 40px;
+  height: 40px;
+  margin-top: 20px;
 }
 
 #notifications {
@@ -65,6 +81,8 @@ header img {
   background-color: lightgreen;
   margin-left: auto;
   border-radius: 50%;
+  position: relative;
+  margin-top: 27px;
 }
 /* NAV */
 
@@ -188,11 +206,14 @@ fill: white;
 
 /* NEW MEMBERS */
 
-.members-container {
+.members-container,
+.activity-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
+  margin-top: 10px;
 }
 
 .profile-image {
@@ -209,22 +230,43 @@ fill: white;
 
 .members-text-1 p {
 padding-left: 35px;
+font-size: 20px;
 }
 
 .members-text-2 p {
 padding-left: 20px;
+font-size: 20px;
 }
 
 .members-text-3 p {
 padding-left: 20px;
+font-size: 20px;
 }
 
 .members-text-4 p {
 padding-left: 35px;
+font-size: 20px;
 }
 
+.members-text-5 p {
+padding-left: 35px;
+font-size: 20px;
+}
 
+.members-text-6 p {
+padding-left: 35px;
+font-size: 20px;
+}
 
+.members-text-7 p {
+padding-left: 35px;
+font-size: 20px;
+}
+
+.members-text-8 p {
+padding-left: 35px;
+font-size: 20px;
+}
 /* MEDIA QUERIES */
 
 form.widget-container {
@@ -281,6 +323,7 @@ button#save.button-primary {
   border-radius: 10px;
   width: 175px;
   height: 70px;
+  color: white;
 }
 
 button#cancel.button-disabled {
@@ -289,21 +332,50 @@ button#cancel.button-disabled {
   border-radius: 10px;
   width: 175px;
   height: 70px;
-  fill: white;
+  color: white;
+}
+
+select#timezone.form-field {
+  width: 370px;
+  height: 55px;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 1em 0 1em;
 }
 
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    justify-content: start;
+  }
   .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas:
     "header header"
     "navigation main";
   }
+
   .main {
+    display: grid;
     grid-template-columns: 50%;
   }
+
+  .traffic-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  }
+
+  .traffic-header h3 {
+    justify-content: center;
+  }
+
+
+
   .traffic, .social {
     grid-column: 1 / span 1;
   }
@@ -321,6 +393,5 @@ button#cancel.button-disabled {
   .widget-container-half {
     width: 45vw;
   }
-
 
 }
