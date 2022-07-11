@@ -67,17 +67,25 @@
       <section class= "traffic" id="chart">
         <div class= "traffic-header"
         <h3>Traffic</h3>
-          <ul class="traffic-nav">
-            <li class="traffic-nav-link">Hourly</li>
-            <li class="traffic-nav-link">Daily</li>
-            <li class="traffic-nav-link active">Weekly</li>
-            <li class="traffic-nav-link">Monthly</li>
-          </ul>
+        <fieldset>
+          <div class="traffic-nav">
+            <input id="hourly" name="view" type="radio" checked>
+            <label for="hourly" onclick="">Hourly</label>
+            <input id="day" name="view" type="radio">
+            <label for="day" onclick="">Daily</label>
+            <input id="week" name="view" type="radio">
+            <label for="week" onclick="">Weekly</label>
+            <input id="month" name="view" type="radio">
+            <label for="month" onclick="">Monthly</label>
+            <a></a>
+          </div>
+          </fieldset>
         </div>
         <div class="widget-container-full">
 
           <canvas id="line"></canvas>
         </div>
+
 
       </section>
       <!-- DAILY TRAFFIC-->
@@ -96,7 +104,10 @@
         </div>
       </section>
     <!-- SOCIAL STATS SECTION-->
-    <h3>Social Stats</h3>
+
+
+    <section class="socials">
+      <h3>Social Stats</h3>
       <div class="social-container">
       <div class="social-image">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -119,6 +130,7 @@
         <p>11,345</P>
       </div>
       </div>
+
       <div class="social-container">
       <div class="social-image">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -130,6 +142,7 @@
         <p>14,345</P>
       </div>
       </div>
+      </section>
       <!-- MEMBERS -->
       <section class="members" id="members">
         <h3>New Members</h3>
