@@ -155,6 +155,10 @@ list-style: none;
   width: 95vw;
 }
 
+fieldset {
+  border: 0;
+}
+
 /* SOCIAL STATS */
 
 .social-container {
@@ -344,7 +348,6 @@ select#timezone.form-field {
 }
 
 /* MEDIA QUERIES */
-
 @media (min-width: 768px) {
 
   nav {
@@ -358,7 +361,7 @@ select#timezone.form-field {
     "navigation main";
   }
 
-  .main {
+  .main-header {
     display: grid;
     grid-template-columns: 50%;
   }
@@ -392,6 +395,11 @@ select#timezone.form-field {
 
   .widget-container-half {
     width: 45vw;
+  }
+
+  section.socials {
+    display: flex;
+
   }
 
 }
