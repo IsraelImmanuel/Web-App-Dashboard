@@ -59,7 +59,7 @@
       <!-- ALERT BANNER -->
       <div class="alert" id="alert">
       <div class="alert-banner">
-        <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete </p>
+        <p><strong>Alert:</strong> You have <strong>6</strong> unread messages </p>
         <p class='alert-banner-close'>x</p>
       </div>
       </div>
@@ -67,25 +67,17 @@
       <section class= "traffic" id="chart">
         <div class= "traffic-header"
         <h3>Traffic</h3>
-        <fieldset>
-          <div class="traffic-nav">
-            <input id="hourly" name="view" type="radio" checked>
-            <label for="hourly" onclick="">Hourly</label>
-            <input id="day" name="view" type="radio">
-            <label for="day" onclick="">Daily</label>
-            <input id="week" name="view" type="radio">
-            <label for="week" onclick="">Weekly</label>
-            <input id="month" name="view" type="radio">
-            <label for="month" onclick="">Monthly</label>
-            <a></a>
-          </div>
-          </fieldset>
+          <ul class="traffic-nav">
+            <li class="traffic-nav-link">Hourly</li>
+            <li class="traffic-nav-link">Daily</li>
+            <li class="traffic-nav-link active">Weekly</li>
+            <li class="traffic-nav-link">Monthly</li>
+          </ul>
         </div>
         <div class="widget-container-full">
 
           <canvas id="line"></canvas>
         </div>
-
 
       </section>
       <!-- DAILY TRAFFIC-->
