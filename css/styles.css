@@ -96,6 +96,10 @@ h1 {
   font-size: 25px;
   margin-left: -10px;
 }
+
+.bell {
+  border-right: lightgray solid 1px;
+}
 /* NAV */
 
 nav {
@@ -129,6 +133,18 @@ main h2 {
   font-size: 25px;
   font-weight: bolder;
   margin-left: 15px;
+}
+
+h2 {
+  background: white;
+  width: 20%;
+}
+
+.background {
+  background: lightgray;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  width: 80%
 }
 /* ALERT */
 
