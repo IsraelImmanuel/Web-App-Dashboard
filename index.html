@@ -6,13 +6,14 @@
     <title>Web App Dashboard</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/toggle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
   <body class="grid-container">
 <!-- HEADER SECTION -->
-    <header id="home ">
+    <header id="home">
         <h1>WebApp</h1>
         <div class="bell-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.033 122.88">
@@ -54,13 +55,11 @@
     </nav>
 <!-- MAIN CONTENT SECTION -->
     <main class="main">
-      
-        <div class="main-header">
+        <div class="tab">
         <h2 class="headline">Dashboard</h2>
-
         <div class="background"></div>
-        <div class="tab"</div>
       </div>
+      
       <!-- ALERT BANNER -->
       <div class="alert" id="alert">
       <div class="alert-banner">
@@ -70,8 +69,8 @@
       </div>
       <!-- LINE GRAPHS CHART -->
       <section class= "traffic" id="chart">
-        <div class= "traffic-header"
-        <h3>Traffic</h3>
+        <div class= "traffic-header">
+        <h3>Traffic </h3>
           <ul class="traffic-nav">
             <li class="traffic-nav-link">Hourly</li>
             <li class="traffic-nav-link">Daily</li>
@@ -105,17 +104,7 @@
 
     <section class="socials">
       <h3>Social Stats</h3>
-      <div class="social-container">
-      <div class="social-image">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
-        </svg>
-      </div>
-      <div class="social-text">
-        <h3>Twitter</h3>
-        <p>10,345</P>
-      </div>
-      </div>
+
       <div class="social-container">
       <div class="social-image">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -139,23 +128,35 @@
         <p>14,345</P>
       </div>
       </div>
+      <div class="social-container">
+      <div class="social-image">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+        </svg>
+      </div>
+      <div class="social-text">
+        <h3>Twitter</h3>
+        <p>10,345</P>
+      </div>
+      </div>
       </section>
       <!-- MEMBERS -->
       <section class="members" id="members">
         <h3>New Members</h3>
 
         <div class="members-container">
-          <img src = "images/member-1.jpg" class="profile-image">
+          <img src = "images/member-1.jpg" class="profile-image" alt="member profile image">
         <div class="members-text-1">
           <p>Victoria Chambers</p>
           <a href="#">victoria.chambers@gmail.com</a>
+
           </div>
           <p>10/15/15</p>
           </div>
 
 
       <div class="members-container">
-        <img src = "images/member-2.jpg" class="profile-image">
+        <img src = "images/member-2.jpg" class="profile-image" alt="member profile image">
       <div class="members-text-2">
         <p>Dale Byrd</p>
         <a href="#">db@gmail.com</a>
@@ -164,7 +165,7 @@
         </div>
 
         <div class="members-container">
-          <img src = "images/member-3.jpg" class="profile-image">
+          <img src = "images/member-3.jpg" class="profile-image" alt="member profile image">
         <div class="members-text-3">
           <p>Dawn Wood</p>
           <a href="#">dawood@gmail.com</a>
@@ -172,7 +173,7 @@
           <p>10/15/20</p>
           </div>
           <div class="members-container">
-            <img src = "images/member-4.jpg" class="profile-image">
+            <img src = "images/member-4.jpg" class="profile-image" alt="member profile image">
           <div class="members-text-4">
             <p>Dan Oliver</p>
             <a href="#">dantoliver@gmail.com</a>
@@ -184,40 +185,40 @@
         <!-- RECENT ACTVITY -->
 
         <section class= "activity">
-          <h3>Recent Activity<h3>
+          <h3>Recent Activity</h3>
             <div class="activity-container">
-              <img src="images/member-1.jpg" class="profile-image">
+              <img src="images/member-1.jpg" class="profile-image" alt="member profile image">
               <div class="members-text-5">
               <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
               <p>4 hours ago </p>
-              <div class="arrow">&#8250</div>
+
               </div>
             </div>
 
             <div class="activity-container">
-              <img src="images/member-2.jpg" class="profile-image">
+              <img src="images/member-2.jpg" class="profile-image" alt="member profile image">
               <div class="members-text-6">
               <p>Dale byrd liked the post <strong>Facebook's changes for 2021</strong></p>
               <p>5 hours ago </p>
-              <div class="arrow">&#8250</div>
+
               </div>
             </div>
 
             <div class="activity-container">
-              <img src="images/member-3.jpg" class="profile-image">
+              <img src="images/member-3.jpg" class="profile-image" alt="member profile image">
               <div class="members-text-7">
               <p>Dawn Wood commented on <strong>Facebook's changes for 2021</strong></p>
               <p>5 hours ago </p>
-              <div class="arrow">&#8250</div>
+
               </div>
             </div>
 
             <div class="activity-container">
-              <img src="images/member-4.jpg" class="profile-image">
+              <img src="images/member-4.jpg" class="profile-image" alt="member profile image">
               <div class="members-text-8">
               <p>Dan Oliver commented on <strong>WebApp's SEO Tips</strong></p>
               <p>1 day ago </p>
-              <div class="arrow">&#8250</div>
+
               </div>
             </div>
         </section>
@@ -236,8 +237,30 @@
       <!-- SETTINGS -->
       <section class="settings" id="settings">
         <h3>Settings</h3>
+        <div class="notification-wrapper">
+          <p>Send Email Notifications</p>
+          <label class="switch-light switch-ios">
+            <input type="checkbox" id="email" checked>
+            <span>
+              <span>Off</span>
+              <span>On</span>
         <a></a>
-        <!-- custom css toggle code -->
+        </span>
+        </label>
+        </div>
+          <div class="notification-wrapper">
+            <p>Set Profile to Public</p>
+            <label class="switch-light switch-ios">
+              <input type="checkbox" id="public" checked>
+              <span>
+                <span>Off</span>
+                <span>On</span>
+          <a></a>
+          </span>
+          </label>
+          </div>
+
+
 
         <select class="form-field" id="timezone">
           <option disabled selected>Select a Timezone</option>
