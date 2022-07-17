@@ -15,7 +15,8 @@
 }
 
 h3 {
-  font-size: 25px
+  font-size: 25px;
+  margin-left: 15px;
 
 }
 
@@ -67,7 +68,7 @@ header img {
 }
 
 .bell-container h3 {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 30px;
 }
 
@@ -89,7 +90,8 @@ header img {
   margin-left: auto;
   border-radius: 50%;
   position: relative;
-  margin-top: 27px;
+  margin-top: 15px;
+  margin-right: 10px;
 }
 
 h1 {
@@ -99,6 +101,8 @@ h1 {
 
 .bell {
   border-right: lightgray solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* NAV */
 
@@ -135,16 +139,17 @@ main h2 {
   margin-left: 15px;
 }
 
-h2 {
+.tab h2 {
   background: white;
-  width: 20%;
+  margin-right: 15px;
+  flex-basis: 20%;
 }
 
 .background {
   background: lightgray;
   border-bottom: 1px solid grey;
   border-left: 1px solid grey;
-  width: 80%
+  flex-grow: 1;
 }
 /* ALERT */
 
@@ -232,6 +237,7 @@ canvas#daily-chart {
   margin-left: 1.1rem;
   font-size: 1.1rem;
   color: #7477bf;
+  text-align: left;
 }
 
 .social-image {
@@ -252,6 +258,9 @@ section.mobile {
   margin-left: 40px;
 }
 
+section.mobile h3 {
+  margin-left: -25px;
+}
 
 /* NEW MEMBERS */
 
@@ -279,43 +288,94 @@ section.mobile {
 
 .members-text-1 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
 }
+
+
 
 .members-text-2 p {
 padding-left: 20px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
 }
 
 .members-text-3 p {
 padding-left: 20px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
 }
 
 .members-text-4 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
+margin-left: 10px;
 }
 
 .members-text-5 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
 }
 
 .members-text-6 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
 }
 
 .members-text-7 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
 }
 
 .members-text-8 p {
 padding-left: 35px;
-font-size: 20px;
+font-size: 15px;
+margin-bottom: -2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
 }
+
+div.members-container img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: -15px;
+}
+
+a {
+  text-decoration: auto;
+}
+
+div.activity-container img {
+  width: 60px;
+  height: 60px;
+}
+
+div.activity-container {
+  margin-right: 5px;
+}
+
 /* MESSAGES */
 
 form.widget-container {
@@ -353,9 +413,7 @@ input#userField.user-field {
   border: grey solid 1px;
 }
 
-::placeholders {
-  display: flex;
-}
+
 
 /* SETTINGS */
 
@@ -377,7 +435,7 @@ button#save.button-primary {
 
 button#cancel.button-disabled {
   border: none;
-  background-color: #7477bf;
+  background-color: lightgray;
   border-radius: 10px;
   width: 175px;
   height: 70px;
@@ -391,6 +449,7 @@ select#timezone.form-field {
   padding: 1em;
   margin: 1em 1em 0 1em;
 }
+
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
@@ -406,9 +465,9 @@ select#timezone.form-field {
     "navigation main";
   }
 
-  .main-header {
-    display: grid;
-    grid-template-columns: 50%;
+  .tab {
+    display: flex;
+    width: 100%;
   }
 
   .traffic-header {
