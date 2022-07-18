@@ -1,5 +1,7 @@
 /* PRIMARY GRID STYLES */
-
+* {
+  box-sizing: border-box;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
@@ -43,7 +45,9 @@ header {
   align-items: center;
   background-color: #7477bf;
   color: white;
-  width: 405px;
+  width: 100%;
+  margin: 0;
+  position: fixed
 }
 
 .bell-container svg {
@@ -399,7 +403,7 @@ button#send.button-primary {
   grid-area: message-field;
   outline: none;
   height: 7rem;
-  margin: 10px;
+  margin: 10px 0;
   padding: 1rem;
   background-color: lightgrey;
   border-radius: 5px;
@@ -483,10 +487,10 @@ select#timezone.form-field {
 
 
 
-  .traffic, .social {
+  .traffic, .socials {
     grid-column: 1 / span 1;
   }
-  .daily, .members, .message {
+  .daily, .members, .messages {
     grid-column: 1 / span 1;
   }
   .mobile, .activity, .settings {
