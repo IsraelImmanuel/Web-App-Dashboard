@@ -426,6 +426,10 @@ input#userField.user-field {
 
 /* SETTINGS */
 
+span {
+  width: 75px;
+}
+
 div.settings.button {
   display: flex;
   justify-content: space-evenly;
@@ -457,6 +461,34 @@ select#timezone.form-field {
   border-radius: 5px;
   padding: 1em;
   margin: 1em 1em 0 1em;
+}
+
+div.email {
+  margin: 20px;
+  width: 90px;
+
+}
+
+div.public {
+  margin: 20px;
+  width: 90px;
+  margin-left: 20px;
+
+}
+
+.notification-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p.set-pro {
+  margin-right: 60px;
+}
+
+p.send-em {
+  margin-right: 30px;
 }
 
 
