@@ -544,6 +544,10 @@ p.send-em {
     "navigation main";
   }
 
+main {
+  display: grid;
+  grid-template-columns: 50%;
+}
   .tab {
     display: flex;
     width: 713px;
@@ -581,6 +585,12 @@ div.alert-banner {
   width: 300px;
 }
 
+.mobile, .daily {
+
+  width: 250px;
+  margin: 20px;
+}
+
 
   .traffic, .socials {
     grid-column: 1 / span 1;
@@ -588,8 +598,20 @@ div.alert-banner {
   .daily, .members, .messages {
     grid-column: 1 / span 1;
   }
-  .mobile, .activity, .settings {
+  .mobile {
     grid-column: 2 / span 1;
+  }
+
+  .settings {
+    grid-column: 1;
+  }
+
+  div#alert.alert {
+    grid-column: 1;
+  }
+
+  .activity {
+    grid-column:1;
   }
 
   .widget-container-full {
