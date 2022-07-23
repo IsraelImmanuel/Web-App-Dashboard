@@ -598,8 +598,8 @@ div.alert-banner {
   .daily, .members, .messages {
     grid-column: 1 / span 1;
   }
-  .mobile {
-    grid-column: 2 / span 1;
+   .mobile {
+    grid-column: 2;
   }
 
   .settings {
@@ -624,10 +624,89 @@ div.alert-banner {
 
   section.socials {
     display: flex;
-
   }
 
+  .members-container, .activity-container {
+    flex-direction: row;
+    justify-content: revert;
+  }
 
+  div.members-container img {
+    margin-bottom: 15px;
+    margin-left: 25px;
+  }
 
+  .members-text-1 p {
+    padding-left: 0;
+  }
+
+  .members-text-2 p {
+  padding-left: 0;
+}
+
+.members-text-3 p {
+padding-left: 0;
+}
+
+.members-text-4 p {
+padding-left: 0;
+}
+
+.members-text-5 p {
+padding-left: 0;
+flex-direction: row;
+}
+
+.members-text-6 p {
+padding-left: 0;
+flex-direction: row;
+}
+
+.members-text-7 p {
+padding-left: 0;
+flex-direction: row;
+}
+
+.members-text-8 p {
+padding-left: 0;
+flex-direction: row;
+}
+
+.contact-members {
+  margin-left: 25px;
+}
+
+div.activity-container img {
+  margin-left: 25px;
+}
+
+.notification-wrapper {
+  justify-content: left;
+  margin-left: 20px;
+}
+
+div.settings.button {
+  width: 600px;
+}
+
+button#save.button-primary {
+  border: none;
+  background-color: #7477bf;
+  border-radius: 10px;
+  width: 350px;
+  height: 60px;
+  color: white;
+  margin: 10px;
+}
+
+button#cancel.button-disabled {
+  border: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  width: 350px;
+  height: 60px;
+  color: white;
+  margin: 10px;
+}
 
 }
