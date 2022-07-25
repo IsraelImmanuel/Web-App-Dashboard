@@ -571,7 +571,7 @@ main {
 .social-wrapper {
   display: flex;
   flex-direction: row;
-
+margin-left: 20px;
 }
 
 .social-bundle {
@@ -632,9 +632,14 @@ div.alert-banner {
     display: flex;
   }
 
-  .members-container, .activity-container {
+  .activity-container {
     flex-direction: row;
     justify-content: revert;
+  }
+
+  .members-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   div.members-container img {
@@ -642,20 +647,36 @@ div.alert-banner {
     margin-left: 25px;
   }
 
+  div.members-text-1 {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+
   .members-text-1 p {
     padding-left: 0;
   }
 
-  .members-text-2 p {
+  .members-text-2  {
+  margin-right: 45px;
+}
+.members-text-2 p {
   padding-left: 0;
 }
 
 .members-text-3 p {
 padding-left: 0;
 }
+.members-text-3 {
+  margin-right: 10px;
+}
 
 .members-text-4 p {
 padding-left: 0;
+margin-left: 0;
+}
+.members-text-4 {
+  margin-right: 10px;
+  margin-left: 0;
 }
 
 .members-text-5 p {
@@ -679,7 +700,7 @@ flex-direction: row;
 }
 
 .contact-members {
-  margin-left: 25px;
+  margin-right: 350px;
 }
 
 div.activity-container img {
@@ -721,7 +742,94 @@ select#timezone.form-field {
 }
 
 canvas#daily-chart {
-  border-right: 2px solid #ddd0d0;
+  border-right: 1.5px solid #ddd0d0;
 }
+
+}
+
+@media (min-width: 1024px) {
+
+main {
+  width: 1024px;
+}
+
+header {
+  width: 1024px;
+}
+
+.tab {
+  width: 968px;
+}
+
+
+
+div.alert-banner {
+width: 900px;
+height: 40px;
+}
+
+.bell-container {
+  margin-left: 700px;
+}
+
+.social-container {
+  height: 100px;
+  width: 1000px;
+}
+
+.social-wrapper {
+  width: 950px;
+  margin-left: 10px;
+}
+
+.contact-members {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.members-container {
+  width: 500px;
+}
+
+.members-text-1,
+.members-text-2,
+.members-text-3,
+.members-text-4 {
+  width: 350px;
+}
+
+.members, .messages {
+  grid-column: 1 / span 1;
+}
+
+.activity, .settings {
+  grid-column: 2 / span 1;
+}
+
+.messages {
+  width: 500px;
+}
+
+.settings {
+  width: 400px;
+}
+
+div.settings.button {
+  width: 420px;
+  margin-top: 5px;
+}
+
+select#timezone.form-field {
+  width: 400px;
+  margin-top: 0;
+}
+
+.settings h3 {
+  border-top: 0;
+  margin-bottom: 0;
+}
+
+
+
 
 }
