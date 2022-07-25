@@ -524,6 +524,10 @@ p.send-em {
     height: 70px;
   }
 
+   main {
+     width: 768px;
+   }
+
   h1 {
     font-size: 25px;
   }
@@ -597,6 +601,7 @@ div.alert-banner {
   }
   .daily, .members, .messages {
     grid-column: 1 / span 1;
+    width: 700px;
   }
    .mobile {
     grid-column: 2;
@@ -611,7 +616,8 @@ div.alert-banner {
   }
 
   .activity {
-    grid-column:1;
+    grid-column:1 / span 1;
+    width: 760px;
   }
 
   .widget-container-full {
@@ -686,7 +692,8 @@ div.activity-container img {
 }
 
 div.settings.button {
-  width: 600px;
+  width: 680px;
+  margin-left: 10px;
 }
 
 button#save.button-primary {
@@ -707,6 +714,14 @@ button#cancel.button-disabled {
   height: 60px;
   color: white;
   margin: 10px;
+}
+
+select#timezone.form-field {
+  width: 670px;
+}
+
+canvas#daily-chart {
+  border-right: 2px solid #ddd0d0;
 }
 
 }
