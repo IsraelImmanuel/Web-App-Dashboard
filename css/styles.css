@@ -59,8 +59,10 @@ header {
   transition: width .3s, height .3s;
 }
 
-svg:hover {
-transition-timing-function: ease-in-out;
+.bell-container svg:hover {
+animation: pulse 0.4s backwards;
+cursor: pointer;
+border-radius: 13px;
 }
 
 header img {
