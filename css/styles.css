@@ -806,6 +806,14 @@ height: 40px;
   grid-column: 2 / span 1;
 }
 
+.activity-container {
+  width: 480px;
+}
+
+.members {
+  width: 400px;
+}
+
 .messages {
   width: 500px;
 }
@@ -828,6 +836,8 @@ select#timezone.form-field {
   border-top: 0;
   margin-bottom: 0;
 }
+
+
 
 
 
