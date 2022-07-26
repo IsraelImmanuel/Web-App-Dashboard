@@ -59,6 +59,13 @@ header {
   transition: width .3s, height .3s;
 }
 
+@keyframes pulse {
+  from {background-color: white;}
+  to {background-color: #7477bf;}
+} {
+
+}
+
 .bell-container svg:hover {
 animation: pulse 0.4s backwards;
 cursor: pointer;
