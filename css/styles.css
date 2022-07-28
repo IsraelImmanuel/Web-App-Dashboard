@@ -865,7 +865,7 @@ height: 40px;
 
 .contact-members {
   margin-right: 0;
-
+  width: 100%;
 }
 
 .members-container {
@@ -929,6 +929,10 @@ section#settings.settings {
   font-size: 2em;
   float: right;
   margin-right: 5px;
+}
+
+.widget-container-half {
+  width: 41vw;
 }
 
 }
