@@ -187,7 +187,7 @@ main h2 {
   margin: 20px;
   border-radius: 5px;
   line-height: 4px;
-  width: 90%;
+  width: 85%;
   font-size: 14px;
 }
 
@@ -198,6 +198,10 @@ main h2 {
 
 .alert-banner-close {
   padding-right: 15px;
+}
+
+div#alert.alert {
+  width: 90%;
 }
 /* CHARTS */
 
@@ -231,7 +235,7 @@ section#chart.traffic {
 }
 
 canvas#line {
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 section.daily {
@@ -243,7 +247,7 @@ canvas#daily-chart {
 }
 
 section.mobile {
-  width: 80%
+  width: 70%
 }
 
 canvas#mobile-chart {
@@ -318,11 +322,11 @@ section.socials {
 /* NEW MEMBERS */
 
 section#members.members {
-  width: 95%;
+  width: 85%;
 }
 
 section.activity {
-  width: 95%;
+  width: 85%;
 }
 
 
@@ -336,6 +340,9 @@ section.activity {
   margin-top: 10px;
 }
 
+.activity-container {
+  text-align: center;
+}
 .profile-image {
   border-radius: 50%;
 }
@@ -354,6 +361,15 @@ font-size: 15px;
 margin-bottom: -2px;
 }
 
+p.date {
+  margin-top: -2px;
+}
+
+p.date1 {
+  margin-top: -2px;
+
+}
+
 
 
 .members-text-2 p {
@@ -363,7 +379,7 @@ margin-bottom: -2px;
 }
 
 .members-text-3 p {
-padding-left: 20px;
+padding-left: 30px;
 font-size: 15px;
 margin-bottom: -2px;
 }
@@ -441,7 +457,7 @@ div.activity-container {
 /* MESSAGES */
 
 section.messages {
-  width: 95%;
+  width: 90%;
 }
 
 form.widget-container {
@@ -484,7 +500,7 @@ input#userField.user-field {
 /* SETTINGS */
 
 section#settings.settings {
-  width: 95%;
+  width: 90%;
   font-size: 12px;
 }
 
@@ -662,6 +678,8 @@ div.alert-banner {
     grid-column: 1;
   }
 
+
+
   .activity {
     grid-column:1 / span 1;
     width: 760px;
@@ -766,6 +784,7 @@ div.activity-container img {
 .notification-wrapper {
   justify-content: left;
   margin-left: 20px;
+  width: 400px;
 }
 
 div.settings.button {
@@ -889,6 +908,7 @@ section.messages {
 div.settings.button {
   width: 420px;
   margin-top: 5px;
+  margin-left: 2px;
 }
 
 select#timezone.form-field {
@@ -908,6 +928,7 @@ section#settings.settings {
   display: flex;
   font-size: 2em;
   float: right;
+  margin-right: 5px;
 }
 
 }
