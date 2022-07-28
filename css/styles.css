@@ -145,6 +145,8 @@ main {
   grid-area: main;
   display: grid;
   background-color: #fbfbfb;
+  width: 100%;
+
 }
 
 main h2 {
@@ -185,12 +187,13 @@ main h2 {
   margin: 20px;
   border-radius: 5px;
   line-height: 4px;
-  width: 280px;
+  width: 90%;
   font-size: 14px;
 }
 
 .alert p {
   padding-left: 15px;
+  font-size: 13px;
 }
 
 .alert-banner-close {
@@ -215,7 +218,7 @@ list-style: none;
 }
 
 .widget-container-full, .widget-container-half {
-  width: 95vw;
+  width: 100%;
   display: flex;
 }
 
@@ -223,12 +226,24 @@ fieldset {
   border: 0;
 }
 
+section#chart.traffic {
+  width: 80%;
+}
+
 canvas#line {
   margin-left: 40px;
 }
 
+section.daily {
+  width: 80%;
+}
+
 canvas#daily-chart {
   margin-left: 40px;
+}
+
+section.mobile {
+  width: 80%
 }
 
 canvas#mobile-chart {
@@ -244,7 +259,7 @@ canvas#mobile-chart {
   display: flex;
 
   text-align: center;
-  width: 290px;
+  width: 264px;
   border: lightgrey solid 1px;
   background-color: rgba(211, 211, 211, 0.404);
   border-radius: 5px;
@@ -296,7 +311,20 @@ section.mobile h3 {
   margin-left: -25px;
 }
 
+section.socials {
+  width: 65%;
+}
+
 /* NEW MEMBERS */
+
+section#members.members {
+  width: 95%;
+}
+
+section.activity {
+  width: 95%;
+}
+
 
 .members-container,
 .activity-container {
@@ -312,7 +340,7 @@ section.mobile h3 {
   border-radius: 50%;
 }
 
-/* MEDIA QUERIES */
+
 
 .form-field {
   display: flex;
@@ -412,6 +440,10 @@ div.activity-container {
 
 /* MESSAGES */
 
+section.messages {
+  width: 95%;
+}
+
 form.widget-container {
   display:flex;
   flex-direction: column;
@@ -451,6 +483,11 @@ input#userField.user-field {
 
 /* SETTINGS */
 
+section#settings.settings {
+  width: 95%;
+  font-size: 12px;
+}
+
 span {
   width: 75px;
 }
@@ -460,7 +497,7 @@ div.settings.button {
   justify-content: space-evenly;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 300px;
+  width: 315px;
 }
 
 button#save.button-primary {
@@ -517,6 +554,10 @@ p.send-em {
   margin-right: 30px;
 }
 
+.arrow {
+  display: none;
+}
+
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
@@ -533,9 +574,6 @@ p.send-em {
     height: 70px;
   }
 
-   main {
-     width: 768px;
-   }
 
   h1 {
     font-size: 25px;
@@ -560,6 +598,7 @@ p.send-em {
 main {
   display: grid;
   grid-template-columns: 50%;
+  width: 55%;
 }
   .tab {
     display: flex;
@@ -568,7 +607,6 @@ main {
 
   .traffic-header {
   display: flex;
-  justify-content: center;
   align-content: center;
 
   }
@@ -595,7 +633,7 @@ margin-left: 20px;
 }
 
 div.alert-banner {
-  width: 300px;
+  width: 600px;
 }
 
 .mobile, .daily {
@@ -641,6 +679,10 @@ div.alert-banner {
     display: flex;
   }
 
+  section.messages {
+    width: 700px;
+  }
+
   .activity-container {
     flex-direction: row;
     justify-content: revert;
@@ -658,15 +700,17 @@ div.alert-banner {
 
   div.members-text-1 {
     padding-left: 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .members-text-1 p {
     padding-left: 0;
+
   }
 
   .members-text-2  {
-  margin-right: 45px;
+  margin-right: 105px;
+  margin-left: 10px;
 }
 .members-text-2 p {
   padding-left: 0;
@@ -675,8 +719,10 @@ div.alert-banner {
 .members-text-3 p {
 padding-left: 0;
 }
+
 .members-text-3 {
-  margin-right: 10px;
+  margin-right: 65px;
+  margin-left: 10px;
 }
 
 .members-text-4 p {
@@ -684,8 +730,9 @@ padding-left: 0;
 margin-left: 0;
 }
 .members-text-4 {
-  margin-right: 10px;
-  margin-left: 0;
+  margin-right: 55px;
+  margin-left: 10px;
+
 }
 
 .members-text-5 p {
@@ -709,7 +756,7 @@ flex-direction: row;
 }
 
 .contact-members {
-  margin-right: 350px;
+  width: 400px;
 }
 
 div.activity-container img {
@@ -754,12 +801,18 @@ canvas#daily-chart {
   border-right: 1.5px solid #ddd0d0;
 }
 
+.arrow {
+  display: flex;
+  font-size: 2em;
+  float: right;
+}
+
 }
 
 @media (min-width: 1024px) {
 
 main {
-  width: 1024px;
+  width: 970px;
 }
 
 header {
@@ -793,7 +846,7 @@ height: 40px;
 
 .contact-members {
   margin-right: 0;
-  margin-left: 10px;
+
 }
 
 .members-container {
@@ -823,9 +876,11 @@ height: 40px;
   width: 400px;
 }
 
-.messages {
+section.messages {
   width: 500px;
 }
+
+
 
 .settings {
   width: 400px;
@@ -846,9 +901,13 @@ select#timezone.form-field {
   margin-bottom: 0;
 }
 
-
-
-
-
+section#settings.settings {
+  width: 340px;
+}
+.arrow {
+  display: flex;
+  font-size: 2em;
+  float: right;
+}
 
 }
