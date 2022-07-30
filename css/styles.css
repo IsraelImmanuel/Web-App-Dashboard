@@ -614,7 +614,7 @@ p.send-em {
 main {
   display: grid;
   grid-template-columns: 50%;
-  width: 55%;
+  width: 65%;
 }
   .tab {
     display: flex;
