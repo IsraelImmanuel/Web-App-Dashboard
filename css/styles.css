@@ -193,7 +193,7 @@ main h2 {
 
 .alert p {
   padding-left: 15px;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .alert-banner-close {
@@ -342,6 +342,7 @@ section.activity {
 
 .activity-container {
   text-align: center;
+  padding-bottom: 15px;
 }
 .profile-image {
   border-radius: 50%;
@@ -614,7 +615,11 @@ p.send-em {
 main {
   display: grid;
   grid-template-columns: 50%;
+<<<<<<< HEAD
   width: 65%;
+=======
+  width: 62%;
+>>>>>>> a28d20bb98ede0d9386fa9d416bf4763290a2b0f
 }
   .tab {
     display: flex;
@@ -625,6 +630,10 @@ main {
   display: flex;
   align-content: center;
 
+  }
+
+  .traffic-nav {
+    margin-left: 300px;
   }
 
   .traffic-header h3 {
@@ -662,9 +671,9 @@ div.alert-banner {
   .traffic, .socials {
     grid-column: 1 / span 1;
   }
-  .daily, .members, .messages {
+  .daily, .messages {
     grid-column: 1 / span 1;
-    width: 700px;
+
   }
    .mobile {
     grid-column: 2;
@@ -680,9 +689,9 @@ div.alert-banner {
 
 
 
-  .activity {
-    grid-column:1 / span 1;
-    width: 760px;
+  .activity, .members {
+    grid-column:1 / span 2;
+
   }
 
   .widget-container-full {
@@ -703,12 +712,14 @@ div.alert-banner {
 
   .activity-container {
     flex-direction: row;
-    justify-content: revert;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .members-container {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 
   div.members-container img {
@@ -756,26 +767,28 @@ margin-left: 0;
 .members-text-5 p {
 padding-left: 0;
 flex-direction: row;
+justify-content: unset;
 }
 
 .members-text-6 p {
 padding-left: 0;
 flex-direction: row;
+justify-content: unset;
 }
 
 .members-text-7 p {
 padding-left: 0;
 flex-direction: row;
+justify-content: unset;
 }
 
 .members-text-8 p {
 padding-left: 0;
 flex-direction: row;
+justify-content: unset;
 }
 
-.contact-members {
-  width: 400px;
-}
+
 
 div.activity-container img {
   margin-left: 25px;
@@ -889,14 +902,21 @@ height: 40px;
 
 .activity-container {
   width: 480px;
+  height: 16.05%;
+  border-left: rgba(211, 211, 211, 0.692) solid 1px;
 }
 
 .members {
   width: 400px;
 }
 
+div.members-container {
+  width: 450px;
+}
+
 section.messages {
   width: 500px;
+  margin-top:-70px;
 }
 
 
@@ -923,6 +943,7 @@ select#timezone.form-field {
 
 section#settings.settings {
   width: 340px;
+  margin-top: -60px;
 }
 .arrow {
   display: flex;
@@ -930,6 +951,16 @@ section#settings.settings {
   float: right;
   margin-right: 5px;
 }
+
+button#save.button-primary {
+  height: 68px;
+}
+
+button#cancel.button-disabled {
+  height: 68px;
+}
+
+
 
 .widget-container-half {
   width: 41vw;
