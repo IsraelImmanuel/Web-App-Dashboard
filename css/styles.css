@@ -373,6 +373,7 @@ p.date1 {
 padding-left: 20px;
 font-size: 12px;
 margin-bottom: -2px;
+text-align: center;
 }
 
 .members-text-3 p {
@@ -526,14 +527,15 @@ div.public {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 p.set-pro {
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 p.send-em {
-  margin-right: 30px;
+  margin-right: 1px;
 }
 
 .arrow {
@@ -663,6 +665,10 @@ div.alert-banner {
     width: 45vw;
   }
 
+  section.mobile {
+    width: 50%;
+  }
+
   section.socials {
     display: flex;
   }
@@ -691,11 +697,7 @@ div.alert-banner {
   div.members-text-1 {
     padding-left: 0;
     margin-left: 10px;
-<<<<<<< Updated upstream
     font-size: 15;
-=======
-    font-size: 13px;
->>>>>>> Stashed changes
   }
 
   .members-text-1 p {
@@ -707,10 +709,13 @@ div.alert-banner {
   margin-right: 105px;
   margin-left: 10px;
   font-size: 15;
+  align-items: center;
+  text-align: center;
 }
 .members-text-2 p {
   padding-left: 0;
   font-size: 15;
+  text-align: center;
 }
 
 .members-text-3 p {
@@ -785,7 +790,7 @@ canvas#daily-chart {
 .arrow {
   display: flex;
   font-size: 2em;
-
+  float: right;
 }
 
 }
@@ -897,16 +902,16 @@ section#settings.settings {
 .arrow {
   display: flex;
   font-size: 2em;
-
+  float: right;
   margin-right: 5px;
 }
 
 button#save.button-primary {
-  height: 1px;
+  height: 68px;
 }
 
 button#cancel.button-disabled {
-  height: 1px;
+  height: 68px;
 }
 
 
