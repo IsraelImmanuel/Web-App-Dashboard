@@ -356,11 +356,7 @@ section.activity {
   margin: 0 auto;
 }
 
-.members-text-1 p {
-padding-left: 35px;
-font-size: 15px;
-margin-bottom: -2px;
-}
+
 
 p.date {
   margin-top: -2px;
@@ -375,26 +371,26 @@ p.date1 {
 
 .members-text-2 p {
 padding-left: 20px;
-font-size: 15px;
+font-size: 12px;
 margin-bottom: -2px;
 }
 
 .members-text-3 p {
 padding-left: 30px;
-font-size: 15px;
+font-size: 12px;
 margin-bottom: -2px;
 }
 
 .members-text-4 p {
 padding-left: 35px;
-font-size: 15px;
+font-size: 12px;
 margin-bottom: -2px;
 margin-left: 10px;
 }
 
-.members-text-5 p {
+.members-text-1 p {
 padding-left: 35px;
-font-size: 15px;
+font-size: 12px;
 margin-bottom: -2px;
 display: flex;
 flex-direction: column;
@@ -403,43 +399,12 @@ justify-content: center;
 margin-right: 30px;
 }
 
-.members-text-6 p {
-padding-left: 35px;
-font-size: 15px;
-margin-bottom: -2px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-right: 30px;
-}
 
-.members-text-7 p {
-padding-left: 35px;
-font-size: 15px;
-margin-bottom: -2px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-right: 30px;
-}
-
-.members-text-8 p {
-padding-left: 35px;
-font-size: 15px;
-margin-bottom: -2px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-right: 30px;
-}
 
 div.members-container img {
   width: 60px;
   height: 60px;
-  margin-bottom: -15px;
+
 }
 
 a {
@@ -615,11 +580,7 @@ p.send-em {
 main {
   display: grid;
   grid-template-columns: 50%;
-<<<<<<< HEAD
-  width: 65%;
-=======
   width: 62%;
->>>>>>> a28d20bb98ede0d9386fa9d416bf4763290a2b0f
 }
   .tab {
     display: flex;
@@ -643,7 +604,7 @@ main {
 .social-wrapper {
   display: flex;
   flex-direction: row;
-margin-left: 20px;
+margin-left: 5px;
 }
 
 .social-bundle {
@@ -730,6 +691,7 @@ div.alert-banner {
   div.members-text-1 {
     padding-left: 0;
     margin-left: 10px;
+    font-size: 15;
   }
 
   .members-text-1 p {
@@ -740,52 +702,35 @@ div.alert-banner {
   .members-text-2  {
   margin-right: 105px;
   margin-left: 10px;
+  font-size: 15;
 }
 .members-text-2 p {
   padding-left: 0;
+  font-size: 15;
 }
 
 .members-text-3 p {
 padding-left: 0;
+font-size: 15;
 }
 
 .members-text-3 {
   margin-right: 65px;
   margin-left: 10px;
+  font-size: 15;
 }
 
 .members-text-4 p {
 padding-left: 0;
 margin-left: 0;
+font-size: 15;
 }
 .members-text-4 {
   margin-right: 55px;
   margin-left: 10px;
+  font-size: 15;
 
-}
 
-.members-text-5 p {
-padding-left: 0;
-flex-direction: row;
-justify-content: unset;
-}
-
-.members-text-6 p {
-padding-left: 0;
-flex-direction: row;
-justify-content: unset;
-}
-
-.members-text-7 p {
-padding-left: 0;
-flex-direction: row;
-justify-content: unset;
-}
-
-.members-text-8 p {
-padding-left: 0;
-flex-direction: row;
-justify-content: unset;
 }
 
 
@@ -916,7 +861,7 @@ div.members-container {
 
 section.messages {
   width: 500px;
-  margin-top:-70px;
+
 }
 
 
@@ -943,7 +888,7 @@ select#timezone.form-field {
 
 section#settings.settings {
   width: 340px;
-  margin-top: -60px;
+  margin-top: 10px;
 }
 .arrow {
   display: flex;
