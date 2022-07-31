@@ -691,7 +691,11 @@ div.alert-banner {
   div.members-text-1 {
     padding-left: 0;
     margin-left: 10px;
+<<<<<<< Updated upstream
     font-size: 15;
+=======
+    font-size: 13px;
+>>>>>>> Stashed changes
   }
 
   .members-text-1 p {
@@ -781,7 +785,7 @@ canvas#daily-chart {
 .arrow {
   display: flex;
   font-size: 2em;
-  float: right;
+
 }
 
 }
@@ -893,16 +897,16 @@ section#settings.settings {
 .arrow {
   display: flex;
   font-size: 2em;
-  float: right;
+
   margin-right: 5px;
 }
 
 button#save.button-primary {
-  height: 68px;
+  height: 1px;
 }
 
 button#cancel.button-disabled {
-  height: 68px;
+  height: 1px;
 }
 
 
