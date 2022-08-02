@@ -145,7 +145,8 @@ main {
   grid-area: main;
   display: grid;
   background-color: #fbfbfb;
-  width: 100%;
+  width: 69.4%;
+
 
 }
 
@@ -546,7 +547,7 @@ p.send-em {
     align-items: center;
     background-color: #7477bf;
     color: white;
-    width: 49.709%;
+    width: 70.9145%;
     margin: 0;
     height: 70px;
   }
@@ -572,6 +573,7 @@ p.send-em {
     "navigation main";
   }
 
+
 main {
   display: grid;
   grid-template-columns: 50%;
@@ -580,7 +582,7 @@ main {
 }
   .tab {
     display: flex;
-    width: 60%;
+    width: 710px;
   }
 
   section.traffic {
@@ -607,6 +609,7 @@ margin-left: 5px;
 .social-bundle {
   display: flex;
   flex-direction: column;
+  width: 70%;
 
 }
 
