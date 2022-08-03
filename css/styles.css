@@ -145,7 +145,7 @@ main {
   grid-area: main;
   display: grid;
   background-color: #fbfbfb;
-  width: 69.4%;
+  width: 100%;
 
 
 }
@@ -169,7 +169,7 @@ main h2 {
 
 .tab {
   display: flex;
-  width: 320px;
+  width: 98.767%;
 }
 .background {
   background: lightgray;
@@ -188,7 +188,7 @@ main h2 {
   margin: 20px;
   border-radius: 5px;
   line-height: 4px;
-  width: 85%;
+  width: 100%;
   font-size: 14px;
 }
 
@@ -547,7 +547,7 @@ p.send-em {
     align-items: center;
     background-color: #7477bf;
     color: white;
-    width: 68%;
+    width: 100%;
     margin: 0;
     height: 70px;
   }
@@ -577,16 +577,18 @@ p.send-em {
 main {
   display: grid;
   grid-template-columns: 50%;
-
+  width: 100%;
   border: 1px solid red
 }
   .tab {
     display: flex;
-    width: 710px;
+    width: 200%;
   }
 
-  section.traffic {
-    width: 50%;
+
+
+  section#chart.traffic {
+    width: 100%;
   }
 
   .traffic-header {
@@ -630,7 +632,7 @@ margin-left: 5px;
 
 
    .socials {
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 2;
   }
   .daily, {
     grid-column: 1 / span 1;
@@ -645,7 +647,7 @@ margin-left: 5px;
   }
 
   div#alert.alert {
-    grid-column: 1;
+    grid-column: 1 / span 2;
   }
 
 
@@ -665,7 +667,7 @@ margin-left: 5px;
   }
 
   section.daily, section.mobile {
-    width: 80%;
+    width: 100%;
     border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
   }
 
@@ -678,19 +680,23 @@ canvas#mobile-chart {
 }
 
   section.socials {
-    display: flex;
+  width: 90%;
 
   }
 
   section.messages {
-width: 90%;
+width: 100%;
   }
 
+.social-container {
+  width: 100%;
+  margin: 10px;
+}
 
 
 section#members.members {
   margin: unset;
-width: 90%;
+width: 100%;
 }
 
   .members-container {
@@ -723,7 +729,7 @@ div.members-container img {
 
 section.activity {
   margin: unset;
-width: 90%;
+width: 100%;
 }
 
 
@@ -737,8 +743,12 @@ div.activity-container img {
   width: 100%;
 }
 
+section.settings {
+  width: 100%;
+}
+
 div.settings.button {
-  width: 90%;
+  width: 108.5%;
   margin-left: 10px;
 }
 
@@ -763,7 +773,7 @@ button#cancel.button-disabled {
 }
 
 select#timezone.form-field {
-  width: 100%;
+  width: 107%;
 }
 
 canvas#daily-chart {
@@ -782,15 +792,15 @@ canvas#daily-chart {
 @media (min-width: 1024px) {
 
 main {
-  width: 970px;
+  width: 100%;
 }
 
 header {
-  width: 1024px;
+  width: 100%;
 }
 
 .tab {
-  width: 968px;
+  width: 100%;
 }
 
 ul.traffic-nav {
@@ -798,7 +808,7 @@ ul.traffic-nav {
 }
 
 .widget-container-full {
-width: 124%;
+width: 100%;
 }
 
 div.alert-banner {
