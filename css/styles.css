@@ -547,7 +547,7 @@ p.send-em {
     align-items: center;
     background-color: #7477bf;
     color: white;
-    width: 70%;
+    width: 68%;
     margin: 0;
     height: 70px;
   }
@@ -683,41 +683,37 @@ canvas#mobile-chart {
   }
 
   section.messages {
-width: 100%;
+width: 90%;
   }
 
 
 
 section#members.members {
   margin: unset;
-width: 95%;
+width: 90%;
 }
-
-
-
-
-  .activity-container {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
 
   .members-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
   }
 
-  .members-text-2 {
+  .members-text-2 p {
     text-align: left;
+    padding-bottom: 0;
+
   }
 
-  .members-text-3 {
-    text-align: left;
+  .members-text-3 p {
+    padding-left: 0;
   }
 
-  .members-text-4 {
-    text-align: left;
+  .members-text-4 p {
+    padding-left: 0;
+    font-size: 12px;
+    margin-left: 0;
+
   }
 
 div.members-container img {
@@ -727,7 +723,7 @@ div.members-container img {
 
 section.activity {
   margin: unset;
-width: 95%;
+width: 90%;
 }
 
 
@@ -742,7 +738,7 @@ div.activity-container img {
 }
 
 div.settings.button {
-  width: 100%;
+  width: 90%;
   margin-left: 10px;
 }
 
@@ -797,7 +793,13 @@ header {
   width: 968px;
 }
 
+ul.traffic-nav {
+  margin-left: 550px;
+}
 
+.widget-container-full {
+width: 124%;
+}
 
 div.alert-banner {
 width: 900px;
@@ -824,14 +826,7 @@ height: 40px;
 }
 
 .members-container {
-  width: 500px;
-}
-
-.members-text-1,
-.members-text-2,
-.members-text-3,
-.members-text-4 {
-  width: 350px;
+  width: 100%;
 }
 
 .members, .messages {
@@ -848,16 +843,16 @@ height: 40px;
   border-left: rgba(211, 211, 211, 0.692) solid 1px;
 }
 
-.members {
-  width: 400px;
+section.members {
+  width: 100%;
 }
 
 div.members-container {
-  width: 450px;
+  width: 100%;
 }
 
 section.messages {
-  width: 500px;
+  width: 100%;
 
 }
 
@@ -868,13 +863,13 @@ section.messages {
 }
 
 div.settings.button {
-  width: 420px;
+  width: 94%;
   margin-top: 5px;
   margin-left: 2px;
 }
 
 select#timezone.form-field {
-  width: 400px;
+  width: 90%;
   margin-top: 0;
 }
 
@@ -884,7 +879,7 @@ select#timezone.form-field {
 }
 
 section#settings.settings {
-  width: 340px;
+  width: 100%;
   margin-top: 10px;
 }
 .arrow {
@@ -896,10 +891,12 @@ section#settings.settings {
 
 button#save.button-primary {
   height: 68px;
+  width: 80%;
 }
 
 button#cancel.button-disabled {
   height: 68px;
+  width: 80%;
 }
 
 
