@@ -547,7 +547,7 @@ p.send-em {
     align-items: center;
     background-color: #7477bf;
     color: white;
-    width: 70.9145%;
+    width: 70%;
     margin: 0;
     height: 70px;
   }
@@ -624,13 +624,15 @@ margin-left: 5px;
 
 
 
+.traffic, .messages {
+  grid-column: 1 / span 2;
+}
 
 
-
-  .traffic, .socials {
+   .socials {
     grid-column: 1 / span 1;
   }
-  .daily, .messages {
+  .daily, {
     grid-column: 1 / span 1;
 
   }
@@ -639,7 +641,7 @@ margin-left: 5px;
   }
 
   .settings {
-    grid-column: 1;
+    grid-column: 1 / span 2;
   }
 
   div#alert.alert {
@@ -657,17 +659,23 @@ margin-left: 5px;
   width: 100%;
   }
 
-  .widget-container-half {
-  width: 80%;
+  section.daily .widget-container-half,
+  section.mobile .widget-container-half {
+    border-bottom: none;
   }
 
-
-
-  section.mobile {
-
+  section.daily, section.mobile {
+    width: 80%;
+    border-bottom: rgba(211, 211, 211, 0.692) solid 1px;
   }
 
-
+section.mobile,
+canvas#daily-chart,
+canvas#mobile-chart {
+  margin-left: initial;
+  margin-right: initial;
+  padding: 10px;
+}
 
   section.socials {
     display: flex;
@@ -675,17 +683,14 @@ margin-left: 5px;
   }
 
   section.messages {
-
-
+width: 100%;
   }
 
-  section.daily {
 
-  }
 
 section#members.members {
   margin: unset;
-
+width: 95%;
 }
 
 
@@ -715,12 +720,14 @@ section#members.members {
     text-align: left;
   }
 
-
+div.members-container img {
+  margin-left: 25px;
+}
 
 
 section.activity {
   margin: unset;
-
+width: 95%;
 }
 
 
