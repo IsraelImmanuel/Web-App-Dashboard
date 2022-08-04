@@ -324,12 +324,12 @@ section.socials {
 /* NEW MEMBERS */
 
 section#members.members {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 }
 
 section.activity {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -421,7 +421,7 @@ div.activity-container {
 /* MESSAGES */
 
 section.messages {
-  width: 90%;
+  width: 97%;
   margin: 0 auto;
 }
 
@@ -582,7 +582,7 @@ main {
   display: grid;
   grid-template-columns: 50%;
   width: 100%;
-  border: 1px solid red
+
 }
   .tab {
     display: flex;
@@ -728,10 +728,13 @@ width: 100%;
 
   p.date {
     margin-top: 0;
+    margin-left: auto;
+    margin-right: 10px;
   }
 
 div.members-container img {
   margin-left: 25px;
+  margin-right: 10px;
 }
 
 
@@ -741,9 +744,7 @@ width: 100%;
 }
 
 
-div.activity-container img {
-  margin-left: 25px;
-}
+
 
 .notification-wrapper {
   justify-content: left;
@@ -791,7 +792,8 @@ canvas#daily-chart {
 .arrow {
   display: flex;
   font-size: 2em;
-  float: right;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 
@@ -867,6 +869,7 @@ section.members {
 
 div.members-container {
   width: 100%;
+  border-right: rgba(211, 211, 211, 0.692) solid 1px;
 }
 
 section.messages {
@@ -874,7 +877,9 @@ section.messages {
 
 }
 
-
+.activity h3 {
+  border-top: rgba(211, 211, 211, 0.692) solid 1px;
+}
 
 .settings {
   width: 400px;
@@ -905,6 +910,7 @@ section#settings.settings {
   font-size: 2em;
   float: right;
   margin-right: 5px;
+  margin-left: auto;
 }
 
 button#save.button-primary {
@@ -921,6 +927,10 @@ button#cancel.button-disabled {
   width: 60%;
 }
 
+p.date {
+  margin-left: auto;
+  margin-right: 10px;
+}
 
 .widget-container-half {
   width: 41vw;
