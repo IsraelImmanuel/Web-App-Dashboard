@@ -690,6 +690,7 @@ canvas#mobile-chart {
 
   section.messages {
 width: 100%;
+border-right: rgba(211, 211, 211, 0.692) solid 1px;
   }
 
 .social-container {
